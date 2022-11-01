@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Kenta </title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/logoPastel.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <a href="#"><img src="imagenes/logoPastel.png" alt="Logo Pasteleria Kenta" class="logo"></a>
+        <nav >
+                <a href="#">Home</a>
+                <a href="#">Contacto</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Sucursales<a>
+        </nav>
+        <div class="imagenes">
+            <img src="imagenes/usuarioicono.png" alt="Icono usuario">
+            <img src="imagenes/carro.png" alt="Icono carrito">
+            <img src="imagenes/buscar.png" alt="Icono busqueda">
+        </div>
+
+    </header>
+    <section class="seccion_pastel">
+        <h2>Pasteles</h2>
+        <div class="pasteles">
+            <div class="chocolate">
+                <img src="imagenes/pastelchocolate.jpg" alt="Pastel de chocolate">
+                <p>Pastel de chocolate</p>
+                <p>precio: $200</p>
+            </div>
+            <div class="fresa">
+                <img src="imagenes/pastelfresa.jpg" alt="Pastel de fresa">
+                <p>Pastel de fresa</p>
+                <p>Precio: $250</p>
+            </div>
+            <div class="frutas">
+                <img src="imagenes/pastelfrutas.jpg" alt="Pastel de frutas">
+                <p>Pastel de Frutas</p>
+                <p>Precio: $ 250</p>
+            </div>
+            <div class="frutas">
+                <img src="imagenes/pastelzanahoria.jpg" alt="Pastel de zanahoria">
+                <p>Pastel de zanahoria</p>
+                <p>Precio: $200 </p>
+            </div>
+        </div>
+    </section>
+    <section class="orden">
+        <h2>Prepara el pastel a tu gusto</h2>
+        <p>Escoge el tipo de pan</p>
+            <select>
+                <option id="panvainilla" name="panvainilla" value="panvainilla">Pan de vainilla</option>
+                <option id="panchocolate" name="panchocolate" value="panchocolate">Pan de chocolate</option>
+                <option id="panintegral" name="panintegral" value="panintegral">Pan integral</option>
+            </select>
+        <h2>Escoge el sabor</h2>
+            <input type="checkbox" name="chocolate" id="chocolate" value="chocolate">
+            <label for="chocolate">Chocolate</label>
+            <br>
+            <input type="checkbox" name="fresa" id="fresa" value="fresa">
+            <label for="fresa">Fresa</label>
+            <br>
+            <input type="checkbox" name="frutas" id="frutas" value="frutas">
+            <label for="frutas">Frutas</label>
+            <br>
+            <input type="checkbox" name="zanahoria" id="zanahoria" value="zanahoria">
+            <label for="zanahoria">zanahoria</label>
+
+        <h2>¿Cuantos Pasteles desea Ordenar?</h2>
+            <input type="number" name="orden" id="orden" value="orden" placeholder="¿Cuantos quiere?">
+    </section>
+    <h2>Datos del Consumidor</h2>
+    <form action="#" class="formulario">
+        <div class="form">
+            <label for="name">Nombre</label><br>
+            <input  type="text" id="name" name="name" value="name" placeholder="Rounded input">
+            <br>
+            <label for="direccion">Domicilio</label><br>
+            <input type="text" name="direccion" id="direccion" value="direccion" placeholder="Domicilio">
+            <br>
+            <label for="telefono">telefono</label><br>
+            <input type="number" name="telefono" id="telefono" value="telefono" placeholder="Telefono" maxlength="10">
+            <br>
+            <textarea name="coment" id="coment" cols="20" rows="5" placeholder="Comentarios"></textarea>
+            <button type="submit">Enviar Pedido</button>
+        </div>
+    </form>
+    <footer>
+        <h2>PROYECTO DE CURSO LAUNCH X</h2>
+    </footer>
+</body>
+</html>
